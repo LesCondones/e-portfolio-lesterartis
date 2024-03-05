@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2ea6e7d911.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="menu-container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li class="nav-item"><a href="#header">Home</a></li>
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Information Systems Security Officer</p>
+                <h1>Hi, I'm <span>Lester Artis</span><br> from Hampton Roads</h1>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--------about----------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="odu.jfif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Lester Artis, graduating in Spring 2024 with a Bachelor of Science in Cyber Operations from Old Dominion University. As an Information Systems Security Officer for the DoD, I bring a blend of academic knowledge and practical experience to the table.
+
+                        With a focus on cybersecurity, I'm equipped to tackle roles such as Information Security Analyst, Security Management Specialist, Network and Computer System Administrator, and Computer Systems Analyst. My goal is to safeguard digital assets and ensure the integrity of organizational security frameworks.
+                        
+                        I thrive on analyzing and implementing robust security measures, developing and enforcing security policies, and optimizing network infrastructures. My analytical skills and strategic mindset enable me to assess and enhance the efficiency of IT systems.
+                        
+                        Let's connect and explore how I can contribute to your team's cybersecurity objectives!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cybersecurity Expertise</span><br>Knowledge and experience in various cybersecurity domains such as network security, application security, cryptography, risk management, and compliance</li>
+                            <li><span>Threat Intelligence</span><br> Ability to analyze and understand emerging cyber threats, vulnerabilities, and attack vectors, and develop strategies to mitigate them effectively</li>
+                            <li><span>Secuirty Architecture</span><br>Skills in designing, implementing, and maintaining secure IT infrastructures, including firewalls, intrusion detection systems, access controls, and encryption mechanisms</li>
+                            <li><span>Incident Response</span><br>Proficiency in incident detection, analysis, containment, eradication, and recovery to minimize the impact of security incidents and breaches</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>08/26/2023-02/26/2024</span><br>Student Intern: Information System Security Officer at USMEPCOM</li>
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2024</span><br>Old Dominion University School of Cybersecuirty Cyber Operations (BS)</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Computer Systems Analysis</h2>
+                    <p>With my Systems Engineering service, I leverage my expertise in designing and optimizing complex systems to deliver robust, scalable, and efficient solutions tailored to meet your organizational needs. Drawing upon my extensive knowledge in system architecture, integration, and optimization, I develop comprehensive systems that seamlessly integrate hardware, software, and network components to maximize performance and reliability. From conceptualization to deployment, I adhere to industry best practices and standards to ensure that your systems meet the highest quality and compliance requirements. Additionally, I prioritize security and resilience by implementing robust cybersecurity measures and proactive monitoring to detect and mitigate potential threats and vulnerabilities. By partnering with me for your Systems Engineering needs, you can rest assured that your critical systems are in safe hands, enabling you to focus on driving innovation and achieving your business objectives with confidence.</p>
+
+
+
+
+                    
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Information Security Analyst</h2>
+                    <p>I specialize in protecting your organization's digital assets and data from cyber threats and vulnerabilities. With a keen eye for detail and a deep understanding of cybersecurity principles, I conduct comprehensive risk assessments, identify potential security gaps, and develop robust security strategies to safeguard your sensitive information. Leveraging advanced threat detection and monitoring tools, I continuously monitor your network and systems for suspicious activities, promptly investigating and responding to security incidents to minimize potential damage. Additionally, I provide ongoing security awareness training to employees, empowering them to recognize and mitigate security risks effectively. By staying abreast of the latest security trends and emerging threats, I ensure that your organization remains ahead of the curve in cybersecurity preparedness. With my expertise as an Information Security Analyst, you can trust that your organization's digital assets are protected against cyber threats, allowing you to operate with confidence and peace of mind.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Security Management Specialist</h2>
+                    <p> I excel in developing and implementing comprehensive security strategies to protect your organization's assets and operations. With a strategic mindset and extensive experience in security management, I analyze your organization's security needs, assess potential risks, and devise tailored security plans to mitigate threats effectively. Drawing upon my expertise in security policy development, access control, and physical security measures, I ensure that your organization maintains a secure and compliant environment. By leveraging advanced security technologies and protocols, I establish robust security frameworks that align with industry best practices and regulatory requirements. Additionally, I provide leadership and guidance to security teams, overseeing security operations and incident response efforts to ensure swift and effective resolution of security incidents. With my dedication to enhancing your organization's security posture and resilience, you can trust that your assets and operations are safeguarded against evolving security threats, enabling your organization to thrive in a secure environment.</p>
+
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Network and Computer Systems Administration</h2>
+                    <p>I am able to Install, configure, and support an organization's local area network (LAN), wide area network (WAN), and Internet systems or a segment of a network system. Monitor network to ensure network availability to all system users and may perform necessary maintenance to support network availability. May monitor and test Web site performance to ensure Web sites operate correctly and without interruption. May assist in network modeling, analysis, planning, and coordination between network and data communications hardware and software.</p>
+
+                    
+                </div>
+                
+                
+                
+            </div>
+
+        </div>
+    </div>
+    
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto:larti001@odu.edu " class="contact-link"><i class="fa-solid fa-paper-plane"></i>Contact Me Via Email</a>
+                    <p><i class="fa-solid fa-phone"></i>7577702878</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lester-artis-jr-b33379248/"><i class="fa-brands fa-linkedin"></i>LinkedIn Account</a>
+                    </div>
+                    <a href="Govres.pdf" download="LesArtisGovresume.pdf" class="btn btn2">Download Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Lester Artis</p>
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+        if (tablink.innerText.trim() === tabname) {
+            tablink.classList.add("active-link");
+        }
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    document.querySelector(`#${tabname}`).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+
+</script> 
+
+
+<script>
+    var sidemenu = document.querySelector("#sidemenu");
+
+    function openmenu() {
+    console.log("Menu opened"); // Add this line to check if the function is being called
+    sidemenu.style.right = '0';
+}
+
+function closemenu() {
+    console.log("Menu closed"); // Add this line to check if the function is being called
+    sidemenu.style.right = '-200px';
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyll9XYWd8YAXN0d6wR8Hc1blQH6UoJAPwFZNtmcoeE17K35VlEJStSG-IFuT8WAzoH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML='Message sent successfully'
+        setTimeout(function(){
+            msg.innerHTML=''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
