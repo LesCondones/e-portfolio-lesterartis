@@ -21,4 +21,4 @@ jobs:
       
       - name: Deploy to S3
         run: |
-          aws s3 sync ./ s3://les-artis-portfolio --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync ./ s3://e-portfolio-lesterartis --delete --exclude ".git/*" --exclude ".github/*"
