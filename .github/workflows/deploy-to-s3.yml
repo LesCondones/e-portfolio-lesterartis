@@ -3,29 +3,22 @@ name: Deploy to AWS S3
 on:
   push:
     branches:
-      - main # Change this if your main branch is named differently
+      - main # Change this if your main branch has a different name
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+      
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1 # Change to your preferred region
-
-      - name: Sync files to S3 bucket
+          aws-region: us-east-1 # Change to your preferred AWS region
+      
+      - name: Deploy to S3
         run: |
-          aws s3 sync ./ s3://your-s3-bucket-name --delete
-
-      - name: Invalidate CloudFront cache (Optional)
-        run: |
-          aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
-        env:
-          AWS_REGION: us-east-1
+          aws s3 sync ./ s3://les-artis-portfolio --delete --exclude ".git/*" --exclude ".github/*"
