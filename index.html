@@ -221,21 +221,26 @@
                 <div>
                     <h2>PostgreSQL Database Deployment on AWS using ECS Fargate</h2>
                     <ul>
-                        <li>Deployed a containerized PostgreSQL database using AWS ECS with Fargate</li>
-                        <li>Built and stored PostgreSQL Docker images in AWS ECR for efficient version control</li>
-                        <li>Configured ECS task definitions with optimized resource allocation</li>
-                        <li>Integrated Amazon CloudWatch Logs for centralized log management</li>
-                        <li>Secured sensitive environment variables using AWS Secrets Manager</li>
+                        <li>Deployed a PostgreSQL database in a containerized environment using AWS ECS with Fargate, enabling serverless container orchestration.</li>
+                        <li>Built and stored PostgreSQL Docker images in AWS Elastic Container Registry for efficient version control, image management, and seamless deployment.</li>
+                        <li>Defined and configured ECS task definitions, specifying 2048 MiB memory and 1 vCPU to optimize performance and resource allocation.</li>
+                        <li>Integrated Amazon CloudWatch Logs for centralized log management, real-time monitoring, and troubleshooting.</li>
+                        <li>Secured environment variables using AWS Secrets Manager and AWS Parameter Store, ensuring sensitive data protection within containers.</li>
+                        <li>Implemented AWS Backup and Amazon RDS automated snapshots for data backup, recovery, and disaster resilience.</li>
+                        <li>Configured awsvpc networking mode for enhanced security, enabling isolated and direct container communication within the VPC.</li>
+                        <li>Utilized the AWS CLI to manage ECS resources, configure deployments, and automate infrastructure provisioning.</li>
                     </ul>
                 </div>
                 <div>
                     <h2>Automated AWS Backup and Logging for Oracle Database</h2>
                     <ul>
-                        <li>Designed an automated backup and logging solution for Oracle databases using AWS</li>
-                        <li>Configured AWS CloudWatch Logs to track database activity and trigger real-time alerts</li>
-                        <li>Implemented AWS Backup with lifecycle policies for streamlined retention</li>
-                        <li>Optimized storage costs by leveraging Amazon S3 with Glacier</li>
-                        <li>Developed Bash scripts to automate database operations</li>
+                        <li>Designed and implemented an automated backup and logging solution for Oracle databases using AWS services.</li>
+                        <li>Configured AWS CloudWatch Logs to monitor database activity and alert on critical events.</li>
+                        <li>Implemented AWS Backup to schedule automated snapshots with lifecycle policies for retention and archival.</li>
+                        <li>Utilized S3 with Glacier storage for long-term backup storage, optimizing cost efficiency.</li>
+                        <li>Developed Bash scripts to automate database backup, log monitoring, and disaster recovery.</li>
+                        <li>Applied IAM policies to enforce least privilege access for backup and restore operations.</li>
+                        <li>Ensured compliance with security best practices by implementing encryption and access controls for backups.</li>
                     </ul>
                 </div>
             </div>
